@@ -469,6 +469,7 @@
 				ADD2DAEF19775A6000DC9E78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ADD2DAF019775A6000DC9E78 /* Build configuration list for PBXNativeTarget "TestCallBackTests" */ = {
 			isa = XCConfigurationList;
@@ -477,6 +478,7 @@
 				ADD2DAF219775A6000DC9E78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -42,6 +42,7 @@
 - (IBAction)showSecondView:(id)sender {
     SecondViewController *second = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
     second.delegate = self;
+    second.flag = 0;
     [self presentViewController:second animated:YES completion:nil];
 }
 
@@ -55,6 +56,7 @@
 
 - (IBAction)showSecondWithBlock:(id)sender {
     SecondViewController *second = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
+    second.flag = 1;
     [self presentViewController:second animated:YES completion:nil];
     second.block = ^(NSString *str){
         self.nameLabel.text = str;

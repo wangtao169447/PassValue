@@ -6,7 +6,12 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SecondViewController">
             <connections>
+                <outlet property="blockMethod" destination="Np3-0I-FHb" id="DH7-Iv-Bj7"/>
+                <outlet property="delegateMethod" destination="9l2-Fy-WDG" id="cZE-YU-d0b"/>
                 <outlet property="nameTextField" destination="gac-TV-OpC" id="XJB-wk-SDu"/>
+                <outlet property="notificationMethod" destination="5b3-bB-NTr" id="Mll-RO-484"/>
+                <outlet property="singletonMethod" destination="RDr-sS-1EI" id="8h1-Or-w56"/>
+                <outlet property="userDefaultMethod" destination="vEX-5r-wKZ" id="tg9-O1-huc"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -16,7 +21,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="input your name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gac-TV-OpC">
-                    <rect key="frame" x="34" y="67" width="261" height="30"/>
+                    <rect key="frame" x="34" y="80" width="261" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
@@ -38,7 +43,7 @@
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
-                        <action selector="delegateMethod:" destination="-1" eventType="touchUpInside" id="Yen-UV-6fN"/>
+                        <action selector="delegateMethod:" destination="-1" eventType="touchUpInside" id="1XH-2E-vJt"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5b3-bB-NTr">
@@ -81,6 +86,13 @@
                         <action selector="singletonMethod:" destination="-1" eventType="touchUpInside" id="EvE-gu-ef6"/>
                     </connections>
                 </button>
+                <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gyG-JF-r6u">
+                    <rect key="frame" x="0.0" y="21" width="320" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <items>
+                        <navigationItem title="BView" id="bSa-k8-Cdn"/>
+                    </items>
+                </navigationBar>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>

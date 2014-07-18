@@ -10,6 +10,11 @@
 #import "DataSource.h"
 @interface SecondViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *nameTextField;
+@property (weak, nonatomic) IBOutlet UIButton *delegateMethod;
+@property (weak, nonatomic) IBOutlet UIButton *notificationMethod;
+@property (weak, nonatomic) IBOutlet UIButton *blockMethod;
+@property (weak, nonatomic) IBOutlet UIButton *userDefaultMethod;
+@property (weak, nonatomic) IBOutlet UIButton *singletonMethod;
 
 @end
 
@@ -100,6 +105,22 @@
         [self dismissViewControllerAnimated:YES completion:nil];
     }else{
         [self showAlert];
+    }
+}
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    if (self.flag == 0) {
+        self.delegateMethod.hidden = NO;
+        self.notificationMethod.hidden = NO;
+        self.blockMethod.hidden = YES;
+        self.userDefaultMethod.hidden = NO;
+        self.singletonMethod.hidden = NO;
+    }else{
+        self.delegateMethod.hidden = YES;
+        self.notificationMethod.hidden = YES;
+        self.blockMethod.hidden = NO;
+        self.userDefaultMethod.hidden = YES;
+        self.singletonMethod.hidden = YES;
     }
 }
 @end

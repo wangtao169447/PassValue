@@ -17,6 +17,7 @@
     RootViewController *root = [[RootViewController alloc] initWithNibName:@"RootViewController" bundle:nil];
     self.window.rootViewController = root;
     self.window.backgroundColor = [UIColor whiteColor];
+    [[UIApplication sharedApplication] setStatusBarHidden:YES];
     [self.window makeKeyAndVisible];
     return YES;
 }

@@ -14,4 +14,5 @@ typedef void (^ablock)(NSString *str);
 @interface SecondViewController : UIViewController
 @property (nonatomic, weak)id<secondViewDelegate> delegate;
 @property (nonatomic, copy) ablock block;
+@property(nonatomic) NSInteger flag;//当前系统标示（0：其他传值方式；1：block传值方式）
 @end
